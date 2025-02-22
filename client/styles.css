@@ -1,3 +1,5 @@
+
+
 :root {
     /* Dark mode colors */
     --text-color: #E3E3E3;
@@ -7,6 +9,8 @@
     --secondary-color: #383838;
     --secondary-hover-color: #444;
 }
+
+
 
 .light_mode {
     /* Light mode colors */
