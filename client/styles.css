@@ -31,6 +31,33 @@ body {
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for theme switching */
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.theme-toggle {
+    display: flex;
+    align-items: center;
+}
+
+#themeToggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+#themeToggle:hover {
+    color: var(--secondary-hover-color);
+}
+
 .chat-container {
     display: flex;
     flex-direction: column;
@@ -49,7 +76,8 @@ body {
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 20px;
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     border-radius: 8px;
 }
 
@@ -125,3 +153,13 @@ body {
         --secondary-hover-color: #444;
     }
 }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .message {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
